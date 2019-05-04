@@ -1,14 +1,5 @@
-
 apply plugin: 'java'
 apply plugin: 'maven'
-
-group = "bravo"
-version = "0.1"
-
-dependencies {
-    compile 'org.springframework:spring-web:5.0.2.RELEASE'
-}
-
 
 repositories {
     mavenCentral()
@@ -22,3 +13,11 @@ buildscript {
 }
 
 apply plugin: 'bravo-plugin'
+
+group = "bravo"
+version = "0.1"
+
+dependencies {
+    external 'org.springframework:spring-web:5.0.2.RELEASE'
+}
+
